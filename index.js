@@ -25,7 +25,7 @@ function createCard(activity) {
     activitiesCollection.innerHTML = `
     <h2>${activity.name}<h2>
         <img class = 'img' src='${activity.image}' />
-        <p>${activity.description}</p>
+        <p class = 'small-text'>${activity.description}</p>
     `
 }
 
@@ -38,9 +38,6 @@ function newActivity(e) {
     }
     if (newActivityItem.name === "") {
         alert('Please add activity name!')
-    }
-    else if (newActivityItem.image === "") {
-        alert('Please add activity image!')
     }
     else if (newActivityItem.description === "") {
         alert('Please add activity description!')

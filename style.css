@@ -4,22 +4,33 @@
 }
 
 #input-text {
-    border-radius: 5px;
+    border-radius: 10px;
     height: 2rem;
     width: 60%;
     font-size: 18px;
-    font-family: monospace;
     margin: auto;
 }
 
 #new-activity-button {
+    display: grid;
     margin: auto;
+}
+
+#new-activity-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.submit:hover {
+    background-color: black;
+    color: white;
 }
 
 .card {
     margin:auto;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 30px;
     width: 20rem;
     height: 30rem;
     box-shadow: 3px 4px grey;
@@ -28,4 +39,13 @@
 .img {
    width: 200px;
    height: 200px
+}
+
+#question {
+    text-align: center;
+}
+
+.small-text {
+    font-size: medium;
+    font-weight: 200;
 }
