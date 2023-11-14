@@ -1,0 +1,31 @@
+#add-activity-form {
+    width: 80%;
+    margin: auto;
+}
+
+#input-text {
+    border-radius: 5px;
+    height: 2rem;
+    width: 60%;
+    font-size: 18px;
+    font-family: monospace;
+    margin: auto;
+}
+
+#new-activity-button {
+    margin: auto;
+}
+
+.card {
+    margin:auto;
+    text-align: center;
+    border: 1px solid black;
+    width: 20rem;
+    height: 30rem;
+    box-shadow: 3px 4px grey;
+}
+
+.img {
+   width: 200px;
+   height: 200px
+}

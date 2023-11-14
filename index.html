@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Generator</title>
+    <link rel = "stylesheet" href="style.css"/>
+    <script defer type = "text/javascript" src = "index.js"></script>
+</head>
+<body>
+    <div class = "form">
+        <form style = 'text-align:center' id="add-activity-form">
+            <h3>Add an activity!</h3>
+
+            <input 
+                type = 'text'
+                name = 'name'
+                value = ""
+                placeholder = 'Enter an activity...'
+                class = 'input-text'
+            />
+            <br />
+            <input 
+                type = 'text'
+                name = 'image'
+                value = ""
+                placeholder = 'Enter an image...'
+                class = 'input-text'
+            />
+            <br />
+            <input 
+                type = 'text'
+                name = 'description'
+                value = ""
+                placeholder = 'Enter a description...'
+                class = 'input-text'
+            />
+            <br />
+            <br />
+            <input 
+                type = 'submit'
+                name = 'submit'
+                value = 'Create Activity'
+                class = 'submit'
+            />
+        </form>
+    </div>
+    <div class="container" id="activity-collection"></div>
+    <br />
+    <button id = "new-activity-button">New Activity!</button>
+</body>
+</html>
