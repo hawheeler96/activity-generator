@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity Generator</title>
     <link rel = "stylesheet" href="style.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet" type="text/css">
     <script defer type = "text/javascript" src = "index.js"></script>
 </head>
 <body>
     <div class = "form">
         <form style = 'text-align:center' id="add-activity-form">
-            <h3>Add an activity!</h3>
+            <h3 class = 'text'>Add an activity!</h3>
 
             <input 
                 type = 'text'
@@ -41,7 +43,8 @@
                 type = 'submit'
                 name = 'submit'
                 value = 'Create Activity'
-                class = 'submit'
+                class = 'btn'
+                id = 'submit'
             />
         </form>
     </div>
@@ -50,9 +53,11 @@
     <br />
     <div class="container" id="activity-collection"></div>
     <br />
-    <button id = "new-activity-button">New Activity!</button>
+    <button id = "new-activity-button" class = 'btn'>New Activity!</button>
     <br />
-    <h2>User Recommendations</h2>
-    <div id = 'favorites-list'></div>
+    <div class = rec-container>
+        <h2 id = 'user-recommendations'>User Recommendations</h2>
+        <div class = 'text' id = 'favorites-list'></div>
+    </div>
 </body>
 </html>

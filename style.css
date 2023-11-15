@@ -1,13 +1,13 @@
-#add-activity-form {
+.add-activity-form {
     width: 80%;
     margin: auto;
 }
 
-#input-text {
+.input-text {
     border-radius: 10px;
-    height: 2rem;
-    width: 60%;
-    font-size: 18px;
+    height: 1rem;
+    width: 40%;
+    font-size: 14px;
     margin: auto;
 }
 
@@ -16,14 +16,38 @@
     margin: auto;
 }
 
-#new-activity-button:hover {
-    background-color: black;
-    color: white;
+.form {
+    background-color: #ffd8b1;
+    border-radius: 30px;
+    width: 70%;
+    height: 12rem;
+    box-shadow: 
+    0 0 0 10px #ff590f,
+    0 0 0 20px #ff27a4;
+    margin: auto;
 }
 
-.submit:hover {
-    background-color: black;
-    color: white;
+.btn {
+    background: linear-gradient(135deg, #ff590f, #ff27a4);
+    border-radius: 20px;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border: 0;
+
+}
+
+#submit {
+    padding: 10px 30px;
+}
+
+#new-activity-button {
+    padding: 10px 30px;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #6ac5fe #9c89ff)
 }
 
 .card {
@@ -33,7 +57,7 @@
     border-radius: 30px;
     width: 20rem;
     height: 30rem;
-    box-shadow: 3px 4px grey;
+    box-shadow: 3px 4px #ff590f;
 }
 
 .img {
@@ -48,4 +72,30 @@
 .small-text {
     font-size: medium;
     font-weight: 200;
+}
+
+.recommendation-list {
+    text-align: center;
+}
+
+#user-recommendations {
+    text-align:center;
+}
+
+h1, h2, h3 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.rec-container {
+    background-color: #ffd8b1;
+    border-radius: 30px;
+    width: 50%;
+    height: 10rem;
+    box-shadow: 
+    0 0 0 10px #ff590f,
+    0 0 0 20px #ff27a4;
+    margin: auto;
 }

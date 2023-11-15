@@ -30,7 +30,7 @@ function createCard(activity) {
         <h2>${activity.name}<h2>
         <img class = 'img' src='${activity.image}' />
         <p class = 'small-text'>${activity.description}</p>
-        <button id = 'activity-${activity.id}'>Reccomend &#x2764;</button>
+        <button class = 'btn' id = 'activity-${activity.id}'>Reccomend &#x2764;</button>
     `
     const recommendationBtn = document.getElementById(`activity-${activity.id}`)
     recommendationBtn.addEventListener('click', () => handleRecommendations(activity))
@@ -49,6 +49,7 @@ function renderUserRecommendations(activities) {
 
 function createRecommendation(activities) {
     const newRecommendation = document.createElement('div');
+    newRecommendation.classList = 'recommendation-list'
     newRecommendation.textContent = `${activities.recommendations} users recommend ${activities.name}`
     if (activities.recommendations > 0) {
         favoritesCollection.append(newRecommendation);
@@ -104,3 +105,4 @@ function newActivity(e) {
         e.target.reset()
     }
 }
+
