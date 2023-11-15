@@ -47,11 +47,12 @@ function renderUserRecommendations(activities) {
     activities.forEach(createRecommendation)
 }
 
-function createRecommendation(activities) {
+function createRecommendation(activity) {
     const newRecommendation = document.createElement('div');
+    newRecommendation.id = activity.id
     newRecommendation.classList = 'recommendation-list'
-    newRecommendation.textContent = `${activities.recommendations} users recommend ${activities.name}`
-    if (activities.recommendations > 0) {
+    newRecommendation.textContent = `${activity.recommendations} users recommend ${activity.name}`
+    if (activity.recommendations > 0) {
         favoritesCollection.append(newRecommendation);
     }
 }
@@ -69,7 +70,13 @@ function handleRecommendations (activity) {
     })
     .then (res => res.json())
     .then (() => {
-        activity.recommmendations = recommendations
+        activity.recommendations = recommendations
+        const recommendation = document.getElementById(activity.id)
+        if(recommendation){
+            recommendation.textContent =  `${activity.recommendations} users recommend ${activity.name}`
+        } else {
+            createRecommendation(activity)
+        }
     })
 }
 
