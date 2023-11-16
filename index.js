@@ -113,6 +113,7 @@ function newActivity(e) {
     }
 }
 
+//adds final event listener to new activity button 
 const newActivityBtn = document.getElementById('new-activity-button')
 newActivityBtn.addEventListener('mouseover', handleMouseOver);
 
