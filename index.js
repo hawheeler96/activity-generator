@@ -6,7 +6,7 @@ let allFavoritesArr = []
 const activitiesCollection = document.getElementById('activity-collection');
 const favoritesCollection = document.getElementById('favorites-list');
 document.getElementById('new-activity-button').addEventListener('click', () =>renderActivities(activitiesArr));
-document.getElementById('add-activity-form').addEventListener('submit', newActivity)
+document.getElementById('add-activity-form').addEventListener('submit', newActivity);
 
 
 //pull activities from db and render random one onto page
@@ -113,3 +113,15 @@ function newActivity(e) {
     }
 }
 
+const newActivityBtn = document.getElementById('new-activity-button')
+newActivityBtn.addEventListener('mouseover', handleMouseOver);
+
+function handleMouseOver(e) {
+    newActivityBtn.style.background = "linear-gradient(135deg, #ffd8b1, #ff590f)"
+}
+
+newActivityBtn.addEventListener('mouseout', handleMouseOut);
+
+function handleMouseOut() {
+    newActivityBtn.style.background = "linear-gradient(135deg, #ff590f, #ff27a4)"
+}
