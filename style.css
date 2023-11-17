@@ -20,7 +20,7 @@
 .form {
     background-color: #ffd8b1;
     border-radius: 30px;
-    width: 50%;
+    width: 70%;
     height: 12rem;
     box-shadow: 
     0 0 0 10px #ff590f,
@@ -104,7 +104,7 @@ p, div {
 .rec-container {
     background-color: #ffd8b1;
     border-radius: 30px;
-    width: 40%;
+    width: 50%;
     box-shadow: 
     0 0 0 10px #ff590f,
     0 0 0 20px #ff27a4;
