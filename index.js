@@ -1,9 +1,8 @@
 //global consts, etc. 
 const API = "http://localhost:3000/activities"
 let activitiesArr = []
-let allFavoritesArr = []
 const activitiesCollection = document.getElementById('activity-collection');
-const favoritesCollection = document.getElementById('favorites-list');
+const recCollection = document.getElementById('rec-list');
 document.getElementById('new-activity-button').addEventListener('click', () =>renderActivities(activitiesArr));
 document.getElementById('add-activity-form').addEventListener('submit', newActivity);
 
@@ -52,7 +51,7 @@ function createRecommendation(activity) {
     newRecommendation.classList = 'recommendation-list'
     newRecommendation.textContent = `${activity.recommendations} users recommend ${activity.name}`
     if (activity.recommendations > 0) {
-        favoritesCollection.append(newRecommendation);
+        recCollection.append(newRecommendation);
     }
 }
 
