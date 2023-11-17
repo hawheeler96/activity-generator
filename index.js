@@ -1,7 +1,6 @@
 //global consts, etc. 
 const API = "http://localhost:3000/activities"
 let activitiesArr = []
-let currentFavoriteArr = []
 let allFavoritesArr = []
 const activitiesCollection = document.getElementById('activity-collection');
 const favoritesCollection = document.getElementById('favorites-list');
