@@ -10,3 +10,5 @@ Users should be able to click a button and randomly generate a card containing a
 Users should be able to click the button multiple times to generate new random activities without refreshing the page.
 
 Users should be able to input physical activities of their choosing into a form and have those activies added to the list of available ones for random generation. 
+
+Users should be able to recommend activities by pressing the "recommend" button on the activity card and see it appear on the recommendations list on the bottom of the page.
